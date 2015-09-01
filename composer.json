@@ -1,0 +1,13 @@
+{
+    "name": "tomas.gura/kalina",
+    "description": "Jindra Kalina - med",
+    "require": {
+        "twbs/bootstrap": "^3.3"
+    },
+    "authors": [
+        {
+            "name": "Tomáš Gůra",
+            "email": "tomas.gura@economia.cz"
+        }
+    ]
+}
