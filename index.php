@@ -18,27 +18,32 @@ and open the template in the editor.
 				<li role="presentation"><a href="kontakt.php">Kontakt</a></li>
 			</ul>
 			<div class="row">
-			<div class="vlevo col-md-6">
-				<p>
-				Vítejte na stránkách včelaře Jindřicha Kaliny.
-				<br>
-				Včelařím na několika stanovištích v Praze a středních Čechách.
-				<br>
-				Budu rád, když si u mne koupíte med. Cena 150,- za cca 1kg sklenici.
-				<br>
-				Mám i velká balení.....
-				<br>
-				Prodávám med řepkový, květový a lesní. Voní krásně.
-				<br>
-				Od 10kg ZDARMA po Praze dovezu.
-				<br>
-				Jinak se domluvíme na předání či ceně za odvoz.
-				</p>
-			</div>
-			<img class="vpravo" src="img/vcela.jpg">
+				<div class="vlevo col-md-6">
+
+					<p>				
+						Vítejte na stránkách PRAŽSKÝ MED včelaře Jindřicha Kaliny.
+						<br>
+						Včelařím na několika stanovištích v Praze a středních Čechách.
+						<br>
+						Budu rád, když si u mne koupíte med.
+						<br>
+						Prodávám med řepkový, květový a lesní. Voní krásně.
+						<br>
+						Cena 150,- za cca 1kg sklenici řepkového a květového medu.
+						<br>
+						Lesní med je k prodeji za 180,-Kč.
+						<br>
+						Mám i velká balení.....
+						<br>
+						Od 10kg ZDARMA po Praze dovezu.
+						<br>
+						Jinak se domluvíme na předání či ceně za odvoz.				
+					</p>
+				</div>
+				<img class="vpravo" src="img/vcela.jpg">
 			</div>
 		</div>
 		<?php require_once './incl/pageFooter.php'; ?>
-		
+
     </body>
 </html>
