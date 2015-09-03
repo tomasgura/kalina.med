@@ -7,11 +7,11 @@ and open the template in the editor.
 <html>
     <head>
 		<?php require_once './incl/header.php'; ?>
-        <title>Jindřích Kalina - Včelař</title>
+        <title>Jindřích Kalina - Pražský med</title>
     </head>
     <body>
-		<?php require_once './incl/pageHeader.php'; ?>
 		<div class="content">
+		<?php require_once './incl/pageHeader.php'; ?>
 			<ul class="nav nav-tabs">
 				<li role="presentation" class="active"><a href="index.php">Úvod</a></li>
 				<li role="presentation"><a href="objednavka.php">Objednávka</a></li>

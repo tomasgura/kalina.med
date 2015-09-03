@@ -11,7 +11,6 @@ and open the template in the editor.
     </head>
     <body>
 		<?php
-		require_once './incl/pageHeader.php';
 		$medy = file_get_contents('data/medy.json');
 		$medy_json = json_decode($medy);
 		$sent=0;
@@ -19,6 +18,7 @@ and open the template in the editor.
 			$sent=$_GET['sent'];
 		?>
 		<div class="content">
+		<?php require_once './incl/pageHeader.php'; ?>
 			<ul class="nav nav-tabs">
 				<li role="presentation"><a href="index.php">Úvod</a></li>
 				<li role="presentation" class="active"><a href="objednavka.php">Objednávka</a></li>

@@ -11,8 +11,8 @@ and open the template in the editor.
         <title>Jindřích Kalina - Kontakt</title>
     </head>
     <body>
-		<?php require_once './incl/pageHeader.php'; ?>
 		<div class="content">
+		<?php require_once './incl/pageHeader.php'; ?>
 			<ul class="nav nav-tabs">
 				<li role="presentation"><a href="index.php">Úvod</a></li>
 				<li role="presentation"><a href="objednavka.php">Objednávka</a></li>
