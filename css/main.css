@@ -37,6 +37,20 @@ body {
 }
 .header {
   height: 50px;
+  position: relative;
+  height: 80px;
+  background-image: url("../img/med_stru_final.jpg");
+}
+.header h1 {
+  float: left;
+  font-weight: bold;
+  color: #772801;
+  margin-left: 1em;
+}
+.header img {
+  float: right;
+  position: relative;
+  top: 0px;
 }
 .vlevo {
   float: left;
