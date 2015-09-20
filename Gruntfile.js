@@ -1,14 +1,15 @@
 module.exports = function (grunt) {
 
 	grunt.initConfig({
+		clean: ["build"],
 		concat: {
 			options: {
 				separator: ';'
 			},
 			dist: {
 				files: {
-					'build/build.js': ['js/*.js'],
-					'build/build.css': ['css/*.css'],
+					'build/build.js': ['js/jquery-1.11.3.js','js/bootstrap.min.js','js/Wallop.min.js'],
+					'build/build.css': ['css/bootstrap.css', 'css/bootstrap-theme.min.css','css/main.css'],
 				},
 			},
 		},
@@ -77,7 +78,7 @@ module.exports = function (grunt) {
 			files: './**/*.php'
 		}
 	});
-	grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
+	grunt.registerTask('default', ['clean','concat:dist', 'uglify', 'cssmin']);
 
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -86,5 +87,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
 };

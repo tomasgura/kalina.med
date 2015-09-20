@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : tomas.gura
 */
 body {
-  background-color: #F69200;
+  background-color: #F69200 !important;
 }
 .nav {
   margin-bottom: 10px;

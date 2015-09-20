@@ -9,6 +9,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jsvalidate": "^0.2.2",
     "grunt-phplint": "0.0.5",
-	"grunt-contrib-cssmin": "0.4.0"
+	"grunt-contrib-cssmin": "0.4.0",
+	"grunt-contrib-clean": "0.6.0"
   }
 }
