@@ -36,7 +36,6 @@ function generuj_obrazky_galerie() {
 	 * 
 	 * 	 */
 	$dir = "galerie/*.jpg";
-	var_dump($dir);
 	$thumbs = glob($dir);
 
 	if (count($thumbs)) {
