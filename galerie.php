@@ -29,11 +29,7 @@ and open the template in the editor.
 						<!-- SLIDER STARTS -->
 						<div class="Wallop Wallop--slide">
 							<div class="Wallop-list">
-								<div class="Wallop-item Wallop-item--current"><img src="imgs/1.jpg"></div>
-								<div class="Wallop-item"><img src="imgs/2.jpg"></div>
-								<div class="Wallop-item"><img src="imgs/3.jpg"></div>
-								<div class="Wallop-item"><img src="imgs/4.jpg"></div>
-								<div class="Wallop-item"><img src="imgs/5.jpg"></div>
+								<?php generuj_obrazky_galerie(); ?>
 							</div>
 
 							<button class="Wallop-buttonPrevious">Previous</button>
