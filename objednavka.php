@@ -7,6 +7,7 @@ and open the template in the editor.
 <html>
     <head>
 		<?php require_once './incl/header.php'; ?>
+		<?php require_once './incl/fnc.php'; ?>
         <title>Jindřích Kalina - Objednávka</title>
     </head>
     <body>
@@ -19,11 +20,7 @@ and open the template in the editor.
 		?>
 		<div class="content">
 		<?php require_once './incl/pageHeader.php'; ?>
-			<ul class="nav nav-tabs">
-				<li role="presentation"><a href="index.php">Úvod</a></li>
-				<li role="presentation" class="active"><a href="objednavka.php">Objednávka</a></li>
-				<li role="presentation"><a href="kontakt.php">Kontakt</a></li>
-			</ul>
+		<?php menu('objednavka') ?>	
 			<div class="row">
 				<div class="col-md-6 vlevo">
 					<form method="POST" action="obj_post.php">

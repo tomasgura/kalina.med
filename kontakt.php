@@ -7,17 +7,14 @@ and open the template in the editor.
 <html>
     <head>
 		<?php require_once './incl/header.php'; ?>
+		<?php require_once './incl/fnc.php'; ?>
 
         <title>Jindřích Kalina - Kontakt</title>
     </head>
     <body>
 		<div class="content">
 		<?php require_once './incl/pageHeader.php'; ?>
-			<ul class="nav nav-tabs">
-				<li role="presentation"><a href="index.php">Úvod</a></li>
-				<li role="presentation"><a href="objednavka.php">Objednávka</a></li>
-				<li role="presentation" class="active"><a href="kontakt.php">Kontakt</a></li>
-			</ul>
+		<?php menu('kontakt') ?>	
 			<div class="vlevo">
 				<h1>Kontakt</h1>
 				<p>Mgr. Jindřich Kalina</p>
