@@ -34,8 +34,12 @@ and open the template in the editor.
 							}
 							?>
 						</select>
+						<label for="frm_email" class="frm_label">Email</label> <br><input type="text" name="email" id="frm_emal" size="53">
+						<br>
+						<label for="frm_tel" class="frm_label">Tel</label> <br><input type="text" name="tel" id="frm_tel" size="53">
+						<br>
 
-						<label for="frm_text">Text objednávky</label> <br><textarea rows="10" cols="50" name="text" id="frm_text" ></textarea>
+						<label for="frm_text" class="frm_label">Text objednávky</label> <br><textarea rows="10" cols="50" name="text" id="frm_text" ></textarea>
 						<br>
 						<input type="submit" value="Odeslat">
 					</form>
