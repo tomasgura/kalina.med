@@ -13,7 +13,11 @@ $headers = 'From: obj@prazskymed.cz' . "\r\n" .
 if (isset($_POST['text']))
 {
 	$txt = $_POST['text'];
-	mail('jinkal@volny.cz','Obj. medu',$txt,$headers);
+	$tel = $_POST['tel'];
+	$mail = $_POST['email'];
+	$zprava="Objednavka medu z webu \n\nTel.: ".$tel. "\n\nmail: ".$mail." \n\nText: ".$txt;
+	mail('jinkal@volny.cz','Obj. medu',$zprava,$headers);
+//	mail('tomas.gura@gmail.com','Obj. medu',$zprava,$headers);
 }
 
 header('Location: objednavka.php?sent=1');
