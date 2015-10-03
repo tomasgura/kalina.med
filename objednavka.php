@@ -20,11 +20,22 @@ and open the template in the editor.
 		?>
 		<div class="content">
 		<?php require_once './incl/pageHeader.php'; ?>
-		<?php menu('objednavka') ?>	
+		<?php menu('objednavka') 
+		
+		/*
+Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
+		 * položky v objednávce - balení, množství (pouze edit) a celkem.
+		 * 
+		 * dvě monžnosti dopravy - osobní odběr a dovoz v okolí Prahy a Příbrami
+		 * 		 */
+		
+		
+		
+		?>	
 			<div class="row">
 				<div class="col-md-6 vlevo">
 					<form method="POST" action="obj_post.php">
-						<select name="druh" style="display:none;">
+						<select name="druh" style="xdisplay:none;">
 							<?php
 							foreach ($medy_json as $med) {
 								echo "<option value='$med->kod'>$med->jmeno</option>";
