@@ -26,7 +26,6 @@ and open the template in the editor.
 			<div class="row">
 				<div class="col-md-6 vlevo" id="form">
 					<form method="POST"  action="obj_post.php">
-						<input type="button" id="btn" value="pepa"/>
 						<?php echo polozky_objednavky(); ?>
 						<select name="druh" style="display:none;">
 							<?php
@@ -63,14 +62,6 @@ and open the template in the editor.
 			var r = 1;
 			$(document).ready(function () {
 				$("[class^=radek]").hide();
-
-				$('#btn').click(function () {
-					var x = $('.mnozstvi0').val();
-					console.log(x)
-					alert(x);
-
-				});
-
 
 				$('#form').click(function () {
 					var c = 0;
