@@ -25,6 +25,7 @@ function polozky_objednavky() {
 	$ret = "";
 	$i = 0;
 	for ($i == 0; $i < 11; $i++) {
+		$j=$i+1;
 		$i==0 ? $cls='prvni':$cls="radek$i";
 		$ret.=" 
   <fieldset class='$cls'>
@@ -33,7 +34,7 @@ function polozky_objednavky() {
     <input type='text' name='mnozstvi$i' id='ctrl_12' size='4' class='mnozstvi$i' value=''>
     <input type='text' name='Cena$i' id='ctrl_12' size='4' class='fff text cena$i' value=''>
 
-<span id='pridat' class='show2'>přidat položku</span>
+<span id='pridat' class='show$j'>přidat položku</span>
   </fieldset>
 		";
 	}

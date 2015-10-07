@@ -60,9 +60,9 @@ and open the template in the editor.
 			?>
 		</div>
 		<script>
-			var r = 2;
+			var r = 1;
 			$(document).ready(function () {
-//				$("[class^=radek]").hide();
+				$("[class^=radek]").hide();
  
 				$('#btn').click(function(){
 					var x = $('.mnozstvi0').val();
@@ -100,13 +100,13 @@ and open the template in the editor.
 
 				}).change();
 				$(":input").trigger("change");
-/*
+
 $("[class^=show]").click(function(){
 $(".radek"+r).show();
 $(".show"+r).hide();
 r++;
  });
-*/
+
 			});
 
 
