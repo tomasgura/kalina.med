@@ -35,7 +35,7 @@ and open the template in the editor.
 							}
 							?>
 						</select>
-  <label for="ctrl_19" class="celkem">cena za med celkem:</label>  <input type="text" name="cenacelkem" id="ctrl_19" class="text celkem" value=""><br>
+						<label for="ctrl_19" class="celkem">cena za med celkem:</label>  <input type="text" name="cenacelkem" id="ctrl_19" class="text celkem" value=""><br>
 						<label for="frm_email" class="frm_label">Email</label> <br><input type="text" name="email" id="frm_emal" size="53">
 						<br>
 						<label for="frm_tel" class="frm_label">Tel</label> <br><input type="text" name="tel" id="frm_tel" size="53">
@@ -63,20 +63,20 @@ and open the template in the editor.
 			var r = 1;
 			$(document).ready(function () {
 				$("[class^=radek]").hide();
- 
-				$('#btn').click(function(){
+
+				$('#btn').click(function () {
 					var x = $('.mnozstvi0').val();
 					console.log(x)
 					alert(x);
-					
+
 				});
-				
-				
+
+
 				$('#form').click(function () {
 					var c = 0;
 					var sum = 0;
 					$(".fff").each(function () {
-					
+
 						var sbaleni = ".baleni" + c;
 						var smnozstvi = ".mnozstvi" + c;
 						var scena = ".cena" + c;
@@ -84,28 +84,28 @@ and open the template in the editor.
 						if (vcem)
 						{
 
-						var co = $(smnozstvi).val();
-						console.debug('baleni '+c+'  '+vcem+'  '+co);
-						// console.debug($(smnozstvi).toSource());
+							var co = $(smnozstvi).val();
+							console.debug('baleni ' + c + '  ' + vcem + '  ' + co);
+							// console.debug($(smnozstvi).toSource());
 
-						var baleni = vcem.substr(10);
-						var polozka = vcem * co;
-						$(scena).val(polozka + ",- Kč");
-						c++;
-						sum = sum + polozka;
-						$(".celkem").val(sum + ",- Kč");
-					}
+							var baleni = vcem.substr(10);
+							var polozka = vcem * co;
+							$(scena).val(polozka + ",- Kč");
+							c++;
+							sum = sum + polozka;
+							$(".celkem").val(sum + ",- Kč");
+						}
 					});
 					//			alert(sum.toString());
 
 				}).change();
 				$(":input").trigger("change");
 
-$("[class^=show]").click(function(){
-$(".radek"+r).show();
-$(".show"+r).hide();
-r++;
- });
+				$("[class^=show]").click(function () {
+					$(".radek" + r).show();
+					$(".show" + r).hide();
+					r++;
+				});
 
 			});
 
