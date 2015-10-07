@@ -36,9 +36,9 @@ and open the template in the editor.
 						<?php echo polozky_objednavky(); ?>
 						<br>
 						<label for="ctrl_19" class="celkem">cena za med celkem:</label>  <input type="text" name="cenacelkem" id="ctrl_19" class="text celkem" value=""><br>
-						<label for="frm_email" class="frm_label">Email</label> <br><input type="text" name="email" id="frm_emal" size="53">
+						<label for="frm_email" class="frm_label">Email</label> <br><input type="email" name="email" id="frm_emal" size="53" required>
 						<br>
-						<label for="frm_tel" class="frm_label">Tel</label> <br><input type="text" name="tel" id="frm_tel" size="53">
+						<label for="frm_tel" class="frm_label">Tel</label> <br><input type="text" name="tel" id="frm_tel" size="53" required>
 						<br>
 
 						<label for="frm_text" class="frm_label">Text objednávky</label> <br><textarea rows="10" cols="50" name="text" id="frm_text" ></textarea>
@@ -57,6 +57,9 @@ and open the template in the editor.
 		<script>
 			var r = 1;
 			$(document).ready(function () {
+				$("#form").validate({
+					ignore: "input[type='text']:hidden"
+				});
 				$("[class^=radek]").hide();
 
 				$('#form').click(function () {
