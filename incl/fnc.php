@@ -34,7 +34,7 @@ function polozky_objednavky() {
     <input type='text' name='mnozstvi$i' id='ctrl_12' size='4' class='mnozstvi$i' value=''>
     <input type='text' name='Cena$i' id='ctrl_12' size='4' class='fff text cena$i' value=''>
 
-<span id='pridat' class='show$j'>přidat položku</span>
+<span id='pridat' class='show$j'><span class='pridej_polozku'>+</span></span>
   </fieldset>
 		";
 	}
