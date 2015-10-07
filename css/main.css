@@ -78,3 +78,15 @@ body {
   margin-top: 5px;
   margin-bottom: 0px;
 }
+fieldset select,
+fieldset input {
+  border: 1px solid #ffd791;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  padding: 2px;
+  width: 170px;
+}
+fieldset input {
+  width: 50px;
+}
