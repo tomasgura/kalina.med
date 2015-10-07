@@ -99,7 +99,7 @@ and open the template in the editor.
 					//			alert(sum.toString());
 
 				}).change();
-//				$(":input").trigger("change");
+				$(":input").trigger("change");
 /*
 $("[class^=show]").click(function(){
 $(".radek"+r).show();
