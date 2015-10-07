@@ -19,7 +19,11 @@ function polozky_objednavky() {
 	$medy = file_get_contents('data/medy.json');
 	$medy_json = json_decode($medy);
 	foreach ($medy_json as $med) {
-		$pol_baleni.= "<option value='$med->cena' data-cena='$med->cena'>$med->jmeno</option>";
+	
+		$val = str_pad($med->kod, 10, ' ');
+		$val.= str_pad($med->jmeno, 50, ' ');
+		$val.=$med->cena;
+		$pol_baleni.= "<option value='$val' data-cena='$med->cena'>$med->jmeno</option>";
 	}
 
 	$ret = "";
@@ -30,7 +34,7 @@ function polozky_objednavky() {
 		$ret.=" 
   <fieldset class='$cls'>
   <legend>č. $i</legend>
-    <select name='Balení$i' id='ctrl_10' class='select baleni$i'>$pol_baleni</select>    
+    <select name='Baleni$i' id='ctrl_10' class='select baleni$i'>$pol_baleni</select>    
     <input type='text' name='mnozstvi$i' id='ctrl_12' size='4' class='mnozstvi$i' value=''>
     <input type='text' name='Cena$i' id='ctrl_12' size='4' class='fff text cena$i' value=''>
 

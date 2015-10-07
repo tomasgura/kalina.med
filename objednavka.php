@@ -10,12 +10,19 @@ and open the template in the editor.
         <title>Jindřích Kalina - Objednávka</title>
     </head>
     <body>
+		
 		<?php
 		require_once 'incl/fnc.php';
+		
 		$sent = 0;
 		if (isset($_GET['sent']))
 			$sent = $_GET['sent'];
 		?>
+			<?php
+			if ($sent == 1) {
+				javascript_alert('Objednávka odeslána');
+			}
+			?>
 		<div class="content">
 			<?php require_once './incl/pageHeader.php'; ?>
 			<ul class="nav nav-tabs">
@@ -46,11 +53,6 @@ and open the template in the editor.
 				<img class="center disp_block"  src="img/maringotka.jpg">
 
 			</div>
-			<?php
-			if ($sent == 1) {
-				javascript_alert('Objednávka odeslána');
-			}
-			?>
 		</div>
 		<script>
 			var r = 1;
@@ -68,11 +70,8 @@ and open the template in the editor.
 						var vcem = $(sbaleni).val();
 						if (vcem)
 						{
-
+							vcem=vcem.substr(57);
 							var co = $(smnozstvi).val();
-							console.debug('baleni ' + c + '  ' + vcem + '  ' + co);
-							// console.debug($(smnozstvi).toSource());
-
 							var baleni = vcem.substr(10);
 							var polozka = vcem * co;
 							$(scena).val(polozka + ",- Kč");
@@ -84,7 +83,7 @@ and open the template in the editor.
 					//			alert(sum.toString());
 
 				}).change();
-				$(":input").trigger("change");
+				$("#form").trigger("click");
 
 				$("[class^=show]").click(function () {
 					$(".radek" + r).show();
