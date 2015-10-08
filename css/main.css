@@ -78,3 +78,20 @@ body {
   margin-top: 5px;
   margin-bottom: 0px;
 }
+fieldset select,
+fieldset input {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  padding: 2px;
+  width: 170px;
+}
+fieldset input {
+  width: 80px;
+}
+.pridej_polozku {
+  background-color: #772801;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}

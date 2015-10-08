@@ -1,8 +1,8 @@
 [
-{	"kod":"kvet1","jmeno":"Květový - 1kg","cena":""},
-{	"kod":"les1","jmeno":"Lesní - 1kg","cena":""},
-{	"kod":"rep1","jmeno":"Smíšený - 1kg","cena":""},
-{	"kod":"kv	et1","jmeno":"Květový - 0,5kg","cena":""},
-{	"kod":"les1","jmeno":"Lesní - 0,5kg","cena":""},
-{	"kod":"rep1","jmeno":"Smíšený - 0,5kg","cena":""}
+{	"kod":"kvet1","jmeno":"Květový - 1kg","cena":"120"},
+{	"kod":"les1","jmeno":"Lesní - 1kg","cena":"120"},
+{	"kod":"rep1","jmeno":"Smíšený - 1kg","cena":"120"},
+{	"kod":"kvet1","jmeno":"Květový - 0,5kg","cena":"80"},
+{	"kod":"les1","jmeno":"Lesní - 0,5kg","cena":"80"},
+{	"kod":"rep1","jmeno":"Smíšený - 0,5kg","cena":"80"}
 ]

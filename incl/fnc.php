@@ -53,3 +53,46 @@ function generuj_obrazky_galerie() {
 		echo "No images";
 	}
 }
+
+
+function polozky_objednavky() {
+	$pol_baleni = "";
+	$medy = file_get_contents('data/medy.json');
+	$medy_json = json_decode($medy);
+	foreach ($medy_json as $med) {
+	
+		$val = str_pad($med->kod, 10, ' ');
+		$val.= str_pad($med->jmeno, 50, ' ');
+		$val.=$med->cena;
+		$pol_baleni.= "<option value='$val' data-cena='$med->cena'>$med->jmeno</option>";
+	}
+
+		$ret = "";
+	$i = 0;
+	for ($i == 0; $i < 11; $i++) {
+		$j=$i+1;
+		$i==0 ? $cls='prvni':$cls="radek$i";
+		$ret.=" 
+  <fieldset class='$cls'>
+  <legend>č. $j</legend>
+    <select name='Baleni$i' id='ctrl_10' class='select baleni$i'>$pol_baleni</select>    
+    <input type='text' name='mnozstvi$i' id='ctrl_12' size='4' class='mnozstvi$i' value='' >
+    <input type='text' name='Cena$i' id='ctrl_12' size='4' class='fff text cena$i' value=''>
+
+<span id='pridat' class='show$j'><span class='pridej_polozku'>+</span></span>
+  </fieldset>
+		";
+	}
+	// var_dump($ret);
+	return $ret;
+
+}
+
+
+	/*
+	  Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
+	 * položky v objednávce - balení, množství (pouze edit) a celkem.
+	 * 
+	 * dvě monžnosti dopravy - osobní odběr a dovoz v okolí Prahy a Příbrami
+	 * 		 */
+

@@ -13,8 +13,10 @@ if ($production==false) {
 <link rel="stylesheet" href="css/main.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="js/jquery-1.11.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.validate.js"></script>		
+		<script src="js/bootstrap.min.js"></script>
 <?php } ?>
 
 <?php

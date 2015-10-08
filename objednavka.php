@@ -11,17 +11,23 @@ and open the template in the editor.
         <title>Jindřích Kalina - Objednávka</title>
     </head>
     <body>
+		
 		<?php
-		$medy = file_get_contents('data/medy.json');
-		$medy_json = json_decode($medy);
-		$sent=0;
+		require_once 'incl/fnc.php';
+		
+		$sent = 0;
 		if (isset($_GET['sent']))
-			$sent=$_GET['sent'];
+			$sent = $_GET['sent'];
 		?>
+			<?php
+			if ($sent == 1) {
+				javascript_alert('Objednávka odeslána');
+			}
+			?>
 		<div class="content">
+			
 		<?php require_once './incl/pageHeader.php'; ?>
 		<?php menu('objednavka') 
-		
 		/*
 Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
 		 * položky v objednávce - balení, množství (pouze edit) a celkem.
@@ -32,20 +38,17 @@ Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
 		
 		
 		?>	
+			
 			<div class="row">
 				<div class="col-md-6 vlevo">
 					<h2>Objednávka</h2>
 					<form method="POST" action="obj_post.php">
-						<select name="druh" style="xdisplay:none;">
-							<?php
-							foreach ($medy_json as $med) {
-								echo "<option value='$med->kod'>$med->jmeno</option>";
-							}
-							?>
-						</select>
-						<label for="frm_email" class="frm_label">Email</label> <br><input type="text" name="email" id="frm_emal" size="53">
+						<?php echo polozky_objednavky(); ?>
 						<br>
-						<label for="frm_tel" class="frm_label">Tel</label> <br><input type="text" name="tel" id="frm_tel" size="53">
+						<label for="ctrl_19" class="celkem">cena za med celkem:</label>  <input type="text" name="cenacelkem" id="ctrl_19" class="text celkem" value=""><br>
+						<label for="frm_email" class="frm_label">Email</label> <br><input type="email" name="email" id="frm_emal" size="53" required>
+						<br>
+						<label for="frm_tel" class="frm_label">Tel</label> <br><input type="text" name="tel" id="frm_tel" size="53" required>
 						<br>
 
 						<label for="frm_text" class="frm_label">Text objednávky</label> <br><textarea rows="10" cols="50" name="text" id="frm_text" ></textarea>
@@ -57,17 +60,56 @@ Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
 				<img src="img/obj.JPG" class="obj_pic">
 			</div>
 			<div>
-					<img class="center disp_block"  src="img/maringotka.jpg">
+				<img class="center disp_block"  src="img/maringotka.jpg">
 
 			</div>
-			<?php
-				if ($sent==1)
-				{
-					require_once 'incl/fnc.php';
-					javascript_alert('Objednávka odeslána');
-				}
-			?>
 		</div>
+		<script>
+			var r = 1;
+			$(document).ready(function () {
+				//$("#form").validate({
+				//	ignore: "input[type='text']:hidden"
+				//});
+				$('#form').validate();
+				$("[class^=radek]").hide();
+
+				$('#form').click(function () {
+					var c = 0;
+					var sum = 0;
+					$(".fff").each(function () {
+
+						var sbaleni = ".baleni" + c;
+						var smnozstvi = ".mnozstvi" + c;
+						var scena = ".cena" + c;
+						var vcem = $(sbaleni).val();
+						if (vcem)
+						{
+							vcem=vcem.substr(57);
+							var co = $(smnozstvi).val();
+							var baleni = vcem.substr(10);
+							var polozka = vcem * co;
+							$(scena).val(polozka + ",- Kč");
+							c++;
+							sum = sum + polozka;
+							$(".celkem").val(sum + ",- Kč");
+						}
+					});
+					//			alert(sum.toString());
+
+				}).change();
+				$("#form").trigger("click");
+
+				$("[class^=show]").click(function () {
+					$(".radek" + r).show();
+					$(".show" + r).hide();
+					r++;
+				});
+
+			});
+
+
+
+		</script>
 		<?php require_once './incl/pageFooter.php'; ?>
 		<?php
 		// put your code here
