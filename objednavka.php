@@ -7,7 +7,6 @@ and open the template in the editor.
 <html>
     <head>
 		<?php require_once './incl/header.php'; ?>
-		<?php require_once './incl/fnc.php'; ?>
         <title>Jindřích Kalina - Objednávka</title>
     </head>
     <body>
@@ -40,9 +39,8 @@ Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
 		?>	
 			
 			<div class="row">
-				<div class="col-md-6 vlevo">
-					<h2>Objednávka</h2>
-					<form method="POST" action="obj_post.php">
+				<div class="col-md-6 vlevo" id="form">
+					<form method="POST"  action="obj_post.php">
 						<?php echo polozky_objednavky(); ?>
 						<br>
 						<label for="ctrl_19" class="celkem">cena za med celkem:</label>  <input type="text" name="cenacelkem" id="ctrl_19" class="text celkem" value=""><br>
