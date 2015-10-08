@@ -57,9 +57,10 @@ and open the template in the editor.
 		<script>
 			var r = 1;
 			$(document).ready(function () {
-				$("#form").validate({
-					ignore: "input[type='text']:hidden"
-				});
+				//$("#form").validate({
+				//	ignore: "input[type='text']:hidden"
+				//});
+				$('#form').validate();
 				$("[class^=radek]").hide();
 
 				$('#form').click(function () {

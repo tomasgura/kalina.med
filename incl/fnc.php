@@ -33,9 +33,9 @@ function polozky_objednavky() {
 		$i==0 ? $cls='prvni':$cls="radek$i";
 		$ret.=" 
   <fieldset class='$cls'>
-  <legend>č. $i</legend>
+  <legend>č. $j</legend>
     <select name='Baleni$i' id='ctrl_10' class='select baleni$i'>$pol_baleni</select>    
-    <input type='text' name='mnozstvi$i' id='ctrl_12' size='4' class='mnozstvi$i' value='' required>
+    <input type='text' name='mnozstvi$i' id='ctrl_12' size='4' class='mnozstvi$i' value='' >
     <input type='text' name='Cena$i' id='ctrl_12' size='4' class='fff text cena$i' value=''>
 
 <span id='pridat' class='show$j'><span class='pridej_polozku'>+</span></span>
