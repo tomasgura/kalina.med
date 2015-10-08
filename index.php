@@ -17,6 +17,7 @@ and open the template in the editor.
 		<?php menu('index') ?>	
 			<div class="row">
 				<div class="vlevo col-md-6">
+					<h2>Úvod</h2>
 
 					<p>				
 						Vítejte na stránkách PRAŽSKÝ MED včelaře Jindřicha Kaliny.
