@@ -8,26 +8,22 @@ and open the template in the editor.
     <head>
 		<?php require_once './incl/header.php'; ?>
 		<?php require_once './incl/fnc.php'; ?>
-
-        <title>Jindřích Kalina - Kontakt</title>
+		
+        <title>Katalog - Jindřích Kalina - Pražský med</title>
     </head>
     <body>
 		<div class="content">
 		<?php require_once './incl/pageHeader.php'; ?>
-		<?php menu('kontakt') ?>	
-			<div class="vlevo">
-				<h1>Kontakt</h1>
-				<p>Mgr. Jindřich Kalina</p>
-				<p>tel: +420 603 451 719 </p>
-				<p>tel: +420 731 599 999 </p>
-				<p> <a href="mailto:jinkal@volny.cz">jinkal@volny.cz</a>
+		<?php menu('katalog') ?>	
+			<div class="row">
+				<div class="vlevo col-md-6">
+					<h2>Katalog</h2>
+					<p>Stránka se připravuje...</p>
+				</div>
+				<img class="vpravo" src="img/vcela.jpg">
 			</div>
-			<img class="vpravo" src="img/kontakt.JPG">
 		</div>
 		<?php require_once './incl/pageFooter.php'; ?>
 
-		<?php
-		// put your code here
-		?>
-	</body>
+    </body>
 </html>
