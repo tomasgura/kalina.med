@@ -17,7 +17,7 @@ function menu($aktivni) {
 	?>
 	<ul class="nav nav-tabs">
 		<li role="presentation" <?php if ($aktivni == 'index') { ?> class="active" <?php } ?> ><a href="index.php">Úvod</a></li>
-		<li role="presentation" <?php if ($aktivni == 'O nás') { ?> class="active" <?php } ?>><a href="o_nas.php">O nás</a></li>
+		<li role="presentation" <?php if ($aktivni == 'o_nas') { ?> class="active" <?php } ?>><a href="o_nas.php">O nás</a></li>
 		<li role="presentation" <?php if ($aktivni == 'katalog') { ?> class="active" <?php } ?>><a href="katalog.php">Katalog</a></li>
 		<li role="presentation" <?php if ($aktivni == 'objednavka') { ?> class="active" <?php } ?>><a href="objednavka.php">Objednávka</a></li>
 		<li role="presentation" <?php if ($aktivni == 'kontakt') { ?> class="active" <?php } ?>><a href="kontakt.php">Kontakt</a></li>
