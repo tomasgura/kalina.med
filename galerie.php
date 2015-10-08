@@ -19,12 +19,9 @@ and open the template in the editor.
 			<?php menu('galerie') ?>	
 			<div class="row">
 				<div class="vlevo col-md-6">
-
-
+					<h2>Galerie</h2>
 
 					<div class="Container">
-						<h1>Wallop Slider Examples</h1>
-						<h2>Animations</h2>
 
 						<!-- SLIDER STARTS -->
 						<div class="Wallop Wallop--slide">
@@ -32,8 +29,8 @@ and open the template in the editor.
 								<?php generuj_obrazky_galerie(); ?>
 							</div>
 
-							<button class="Wallop-buttonPrevious">Previous</button>
-							<button class="Wallop-buttonNext">Next</button>
+							<button class="Wallop-buttonPrevious"><</button>
+							<button class="Wallop-buttonNext">></button>
 						</div>
 						<!-- SLIDER ENDS -->
 
@@ -87,7 +84,7 @@ and open the template in the editor.
 
     animations.forEach(function(animation) {
       insertCss(animation);
-      insertButton(animation);
+//      insertButton(animation);
     });
 
 
