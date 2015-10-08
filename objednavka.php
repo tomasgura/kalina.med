@@ -34,6 +34,7 @@ Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
 		?>	
 			<div class="row">
 				<div class="col-md-6 vlevo">
+					<h2>Objednávka</h2>
 					<form method="POST" action="obj_post.php">
 						<select name="druh" style="xdisplay:none;">
 							<?php
