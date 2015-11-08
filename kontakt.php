@@ -22,7 +22,7 @@ and open the template in the editor.
 				<p>tel: +420 731 599 999 </p>
 				<p> <a href="mailto:jinkal@volny.cz">jinkal@volny.cz</a>
 			</div>
-			<img class="vpravo" src="img/kontakt.JPG">
+			<img class="vpravo" src="img/kontakt.jpg">
 		</div>
 		<?php require_once './incl/pageFooter.php'; ?>
 

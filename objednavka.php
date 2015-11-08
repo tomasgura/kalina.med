@@ -55,7 +55,7 @@ Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
 					</form>
 
 				</div>
-				<img src="img/obj.JPG" class="obj_pic">
+				<img src="img/obj.jpg" class="obj_pic">
 			</div>
 			<div>
 				<img class="center disp_block"  src="img/maringotka.jpg">
