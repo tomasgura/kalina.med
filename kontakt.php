@@ -22,7 +22,6 @@ and open the template in the editor.
 				<h1>Kontakt</h1>
 				<p>Mgr. Jindřich Kalina</p>
 				<p>tel: +420 603 451 719 </p>
-				<p>tel: +420 731 599 999 </p>
 				<p> <a href="mailto:jinkal@volny.cz">jinkal@volny.cz</a>
 			</div>
 			<img class="vpravo" src="img/kontakt.JPG">
