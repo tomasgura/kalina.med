@@ -19,7 +19,7 @@ and open the template in the editor.
 			<?php menu('galerie') ?>	
 			<div class="row">
 				<div class="vlevo col-md-6">
-					<h2>Galerie</h2>
+					<h2>Galerie:</h2>
 
 					<div class="Container">
 

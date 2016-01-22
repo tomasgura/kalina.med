@@ -17,7 +17,7 @@ and open the template in the editor.
 			<?php menu('katalog') ?>	
 			<div class="row">
 				<div class="vlevo col-md-12">
-					<h2>Druhy medu</h2>
+					<h2>Druhy medu:</h2>
 
 
 

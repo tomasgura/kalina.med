@@ -16,7 +16,7 @@ and open the template in the editor.
 		<?php require_once './incl/pageHeader.php'; ?>
 		<?php menu('kontakt') ?>	
 			<div class="vlevo">
-				<h1>Kontakt</h1>
+				<h1>Kontakt:</h1>
 				<p>Mgr. Jindřich Kalina</p>
 				<p>tel: +420 603 451 719 </p>
 				<p> <a href="mailto:jinkal@volny.cz">jinkal@volny.cz</a>
