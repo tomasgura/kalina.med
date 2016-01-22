@@ -32,7 +32,7 @@ and open the template in the editor.
 						<br>
 						Lesní med je k prodeji za 180,-Kč.
 						<br>
-						Mám i velká balení.....
+						Mám menší i velká balení.....
 						<br>
 						Od 10kg ZDARMA po Praze dovezu.
 						<br>

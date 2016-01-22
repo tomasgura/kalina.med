@@ -40,16 +40,18 @@ Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
 			
 			<div class="row">
 				<div class="col-md-6 vlevo" id="form">
+					<h2>Objednávka:</h2>
+
 					<form method="POST"  action="obj_post.php">
 						<?php echo polozky_objednavky(); ?>
 						<br>
-						<label for="ctrl_19" class="celkem">cena za med celkem:</label>  <input type="text" name="cenacelkem" id="ctrl_19" class="text celkem" value=""><br>
+						<label for="ctrl_19" class="celkem">Cena za med celkem:</label>  <input type="text" name="cenacelkem" id="ctrl_19" class="text celkem" value=""><br>
 						<label for="frm_email" class="frm_label">E-mail:</label> <br><input type="email" name="email" id="frm_emal" size="53" required>
 						<br>
 						<label for="frm_tel" class="frm_label">Telefon:</label> <br><input type="text" name="tel" id="frm_tel" size="53" required>
 						<br>
 
-						<label for="frm_text" class="frm_label">Text objednávky:</label> <br><textarea rows="10" cols="50" name="text" id="frm_text" ></textarea>
+						<label for="frm_text" class="frm_label">Text objednávky:</label> <br><textarea rows="3" cols="50" name="text" id="frm_text" ></textarea>
 						<br>
 						<input type="submit" value="Odeslat">
 					</form>
