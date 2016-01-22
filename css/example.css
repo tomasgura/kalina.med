@@ -1,0 +1,34 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.Container {
+  max-width: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Wallop--1,
+.Wallop--2 {
+  float: left;
+  max-width: 45%;
+}
+
+.Wallop--2 {
+  float: right;
+}
+
+.Wallop-item:before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 0;
+}
+
+
+.Wallop img {
+  vertical-align: middle;
+  width: 100%;
+}

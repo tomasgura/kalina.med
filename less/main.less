@@ -9,7 +9,9 @@ and open the template in the editor.
 */
 
 @col_li:#772801;
-body {background-color: #F69200;}
+
+body { background-color: #F69200 !important; }
+
 .nav {
 	margin-bottom:10px;
 	+ p {margin-top: 25px;}
@@ -40,3 +42,18 @@ body {background-color: #F69200;}
 .center {margin: 0 auto;}
 .disp_block {display:block;}
 .frm_label{margin-top: 5px; margin-bottom: 0px;}
+
+fieldset {
+	select, input {
+    // border: 1px solid #ffd791;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+    width: 170px;
+		
+	}
+	input { width:80px;}
+}
+
+.pridej_polozku { background-color:@col_li; color:white; padding: 5px; cursor: pointer;}

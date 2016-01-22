@@ -1,0 +1,551 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7.10.2015, 13:45:56
+    Author     : tomas.gura
+*/
+
+
+body, form {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0 none;
+}
+header, footer, nav, section, aside, article, figure, figcaption {
+    display: block;
+}
+body {
+    font-size: 100.01%;
+}
+select, input, textarea {
+    font-size: 99%;
+}
+#container, .inside {
+    position: relative;
+}
+#main, #left, #right {
+    float: left;
+    position: relative;
+}
+#main {
+    width: 100%;
+}
+#left {
+    margin-left: -100%;
+}
+#right {
+    margin-right: -100%;
+}
+#footer {
+    clear: both;
+}
+@media (max-width: 767px) {
+#wrapper {
+    margin: 0;
+    width: auto;
+}
+#container {
+    padding-left: 0;
+    padding-right: 0;
+}
+#main, #left, #right {
+    float: none;
+    width: auto;
+}
+#left {
+    margin-left: 0;
+    right: 0;
+}
+#right {
+    margin-right: 0;
+}
+}
+#main .inside {
+    min-height: 1px;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+.ie7 img {
+}
+.ie8 img {
+    width: auto;
+}
+.ce_gallery ul {
+    list-style: outside none none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.ce_gallery li {
+    float: left;
+}
+.ce_gallery li.col_first {
+    clear: left;
+}
+.block {
+    overflow: hidden;
+}
+.clear, #clear {
+    clear: both;
+    font-size: 0.1px;
+    height: 0.1px;
+    line-height: 0.1px;
+}
+.invisible {
+    display: inline;
+    height: 0;
+    left: -1000px;
+    overflow: hidden;
+    position: absolute;
+    top: -1000px;
+    width: 0;
+}
+.custom {
+    display: block;
+}
+#container::after, .custom::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, ol, ul, li, dl, dt, dd, figure, table, th, td, form, fieldset, legend, input, textarea {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: start;
+    vertical-align: top;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+    font-variant: normal;
+}
+blockquote, q {
+    quotes: none;
+}
+fieldset, img {
+    border: 0 none;
+}
+ul {
+    list-style-type: none;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+del {
+    text-decoration: line-through;
+}
+ins {
+    text-decoration: none;
+}
+header, footer, nav, section, aside, article, figure, figcaption {
+    display: block;
+}
+body {
+    color: #000;
+    font: 12px/1 "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+}
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: 99%;
+    font-weight: inherit;
+}
+pre, code {
+    font-family: Monaco,monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+h1 {
+    font-size: 1.8333em;
+}
+h2 {
+    font-size: 1.6667em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.3333em;
+}
+table {
+    font-size: inherit;
+}
+caption, th {
+    font-weight: bold;
+}
+a {
+    color: #00f;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, table, ol, ul, form {
+    margin-bottom: 12px;
+}
+#colorbox, #cboxOverlay, #cboxWrapper {
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+}
+#cboxOverlay {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+#cboxMiddleLeft, #cboxBottomLeft {
+    clear: left;
+}
+#cboxContent {
+    position: relative;
+}
+#cboxLoadedContent {
+    overflow: auto;
+}
+#cboxTitle {
+    margin: 0;
+}
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+    cursor: pointer;
+}
+.cboxPhoto {
+    border: 0 none;
+    display: block;
+    float: left;
+    margin: auto;
+    max-width: none;
+}
+.cboxIframe {
+    border: 0 none;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#colorbox, #cboxContent, #cboxLoadedContent {
+    box-sizing: content-box;
+}
+#cboxOverlay {
+    background: #000 none repeat scroll 0 0;
+}
+#colorbox {
+    outline: 0 none;
+}
+#cboxContent {
+    background: #000 none repeat scroll 0 0;
+    margin-top: 20px;
+}
+.cboxIframe {
+    background: #fff none repeat scroll 0 0;
+}
+#cboxError {
+    border: 1px solid #ccc;
+    padding: 50px;
+}
+#cboxLoadedContent {
+    background: #fff none repeat scroll 0 0;
+    border: 5px solid #000;
+}
+#cboxTitle {
+    color: #ccc;
+    left: 0;
+    position: absolute;
+    top: -20px;
+}
+#cboxCurrent {
+    color: #ccc;
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+#cboxLoadingGraphic {
+    background: rgba(0, 0, 0, 0) url("../../assets/jquery/colorbox/1.4.31/images/loading.gif") no-repeat scroll center center;
+}
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    border: 0 none;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    width: auto;
+}
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {
+    outline: 0 none;
+}
+#cboxSlideshow {
+    color: #fff;
+    position: absolute;
+    right: 90px;
+    top: -20px;
+}
+#cboxPrevious {
+    background: rgba(0, 0, 0, 0) url("../../assets/jquery/colorbox/1.4.31/images/controls.png") no-repeat scroll left top;
+    height: 65px;
+    left: 5px;
+    margin-top: -32px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 28px;
+}
+#cboxPrevious:hover {
+    background-position: left bottom;
+}
+#cboxNext {
+    background: rgba(0, 0, 0, 0) url("../../assets/jquery/colorbox/1.4.31/images/controls.png") no-repeat scroll right top;
+    height: 65px;
+    margin-top: -32px;
+    position: absolute;
+    right: 5px;
+    text-indent: -9999px;
+    top: 50%;
+    width: 28px;
+}
+#cboxNext:hover {
+    background-position: right bottom;
+}
+#cboxClose {
+    background: rgba(0, 0, 0, 0) url("../../assets/jquery/colorbox/1.4.31/images/controls.png") no-repeat scroll center top;
+    display: block;
+    height: 19px;
+    position: absolute;
+    right: 5px;
+    text-indent: -9999px;
+    top: 5px;
+    width: 38px;
+}
+#cboxClose:hover {
+    background-position: center bottom;
+}
+html, body, #wrapper, #container {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: rgba(0, 0, 0, 0) url("../../files/bgrep.jpg") repeat scroll center top;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+}
+#main {
+    border: 2px solid #a63403;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+    height: 500px;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -250px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    width: 960px;
+}
+footer {
+    color: #5f1707;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: 262px;
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    width: 960px;
+}
+footer a {
+    color: #5f1707;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #5f1707;
+    text-decoration: underline;
+}
+label {
+    color: #707070;
+}
+#main {
+    background-color: #fff;
+}
+fieldset br, .dodani br {
+    display: none;
+}
+fieldset select, fieldset input {
+    border: 1px solid #ffd791;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+    width: 170px;
+}
+input.celkem {
+    border: 1px solid #ffd791;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 2px;
+    width: 170px;
+}
+label.celkem {
+    background-color: #ffd791;
+    color: #000;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 4px 5px;
+    width: 165px;
+}
+#pridat {
+    background-color: #ffd791;
+    border: 0 none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    padding: 2px;
+    text-align: center;
+    width: 170px;
+}
+fieldset {
+    border: 0 none;
+    margin-bottom: 10px;
+    padding: 5px 0 0;
+}
+.mod_article {
+    height: 458px;
+    margin-bottom: 0;
+    overflow: auto;
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+legend {
+    background-color: #ffd791;
+    color: #e89700;
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 900px;
+}
+.kontakt label {
+    display: block;
+    float: left;
+    width: 150px;
+}
+.kontakt input {
+    border: 1px solid #ffd791;
+    margin-bottom: 10px;
+    width: 200px;
+}
+textarea#ctrl_52 {
+    width: 200px;
+}
+textarea {
+    border: 1px solid #ffd791;
+}
+.pozn {
+    float: right;
+    margin-right: auto;
+    position: relative;
+    width: 550px;
+}
+.popisek {
+    border-top: 2px dotted #e89700;
+    color: #e89700;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 900px;
+}
+.radio_container input {
+    border: 0 none;
+    width: auto;
+}
+.radio_container span {
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+}
+.submit {
+    font-weight: bold;
+    height: 25px;
+    margin-top: 20px;
+    width: 900px;
+}
+.konec {
+    clear: both;
+    display: block;
+    font-weight: bold;
+    padding-top: 10px;
+}
+h1 {
+    color: #e89700;
+    font-size: 26px;
+    font-weight: bold;
+}
+.menuline ul {
+    margin: 3px 0 0;
+    padding: 0;
+}
+.menuline {
+    background-color: #fcf;
+    position: relative;
+    z-index: 2;
+}
+.menuline li {
+    box-shadow: 2px -2px 3px rgba(0, 0, 0, 1);
+    color: #fb0;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    font-style: italic;
+    height: 52px;
+    letter-spacing: 3px;
+    margin: 0 1px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 319px;
+}
+.menuline li a {
+    color: #fb0;
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 10px 0 40px;
+    text-align: center;
+    text-decoration: none;
+}
+.menu1 {
+    background: rgba(0, 0, 0, 0) url("../../files/menu1.jpg") no-repeat scroll center center;
+}
+.menu4 {
+    background: rgba(0, 0, 0, 0) url("../../files/menu1.jpg") no-repeat scroll right top;
+}
+.menu2 {
+    background: rgba(0, 0, 0, 0) url("../../files/menu2.jpg") no-repeat scroll center center;
+}
+.menu3 {
+    background: rgba(0, 0, 0, 0) url("../../files/menu3.jpg") no-repeat scroll center center;
+}
+

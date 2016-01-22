@@ -7,18 +7,17 @@ and open the template in the editor.
 <html>
     <head>
 		<?php require_once './incl/header.php'; ?>
+		<?php require_once './incl/fnc.php'; ?>
+		
         <title>Jindřích Kalina - Pražský med</title>
     </head>
     <body>
 		<div class="content">
 		<?php require_once './incl/pageHeader.php'; ?>
-			<ul class="nav nav-tabs">
-				<li role="presentation" class="active"><a href="index.php">Úvod</a></li>
-				<li role="presentation"><a href="objednavka.php">Objednávka</a></li>
-				<li role="presentation"><a href="kontakt.php">Kontakt</a></li>
-			</ul>
+		<?php menu('index') ?>	
 			<div class="row">
 				<div class="vlevo col-md-6">
+					<h2>Úvod</h2>
 
 					<p>				
 						Vítejte na stránkách PRAŽSKÝ MED včelaře Jindřicha Kaliny.
