@@ -18,7 +18,10 @@ function menu($aktivni) {
 	<ul class="nav nav-tabs">
 		<li role="presentation" <?php if ($aktivni == 'index') { ?> class="active" <?php } ?> ><a href="index.php">Úvod</a></li>
 		<li role="presentation" <?php if ($aktivni == 'o_nas') { ?> class="active" <?php } ?>><a href="o_nas.php">O nás</a></li>
-		<li role="presentation" <?php if ($aktivni == 'katalog') { ?> class="active" <?php } ?>><a href="katalog.php">Katalog</a></li>
+		<li role="presentation" <?php if ($aktivni == 'o_vcelach') { ?> class="active" <?php } ?>><a href="o_vcelach.php">O včelách</a></li>
+		<li role="presentation" <?php if ($aktivni == 'o_medu') { ?> class="active" <?php } ?>><a href="o_medu.php">O medu</a></li>
+		
+		<li role="presentation" <?php if ($aktivni == 'katalog') { ?> class="active" <?php } ?>><a href="katalog.php">Druhy medu</a></li>
 		<li role="presentation" <?php if ($aktivni == 'objednavka') { ?> class="active" <?php } ?>><a href="objednavka.php">Objednávka</a></li>
 		<li role="presentation" <?php if ($aktivni == 'kontakt') { ?> class="active" <?php } ?>><a href="kontakt.php">Kontakt</a></li>
 		<li role="presentation" <?php if ($aktivni == 'galerie') { ?> class="active" <?php } ?>><a href="galerie.php">Galerie</a></li>

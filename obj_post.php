@@ -7,7 +7,7 @@
  */
 
 $headers = 'From: obj@prazskymed.cz' . "\r\n" .
-    'Reply-To: obj@razskymed.cz' . "\r\n" .
+    'Reply-To: obj@prazskymed.cz' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 if (isset($_POST['text']))
