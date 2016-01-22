@@ -25,12 +25,12 @@ and open the template in the editor.
 
 						<!-- SLIDER STARTS -->
 						<div class="Wallop Wallop--slide">
+							<button class="Wallop-buttonPrevious"><</button>
+							<button class="Wallop-buttonNext">></button>
 							<div class="Wallop-list">
 								<?php generuj_obrazky_galerie(); ?>
 							</div>
 
-							<button class="Wallop-buttonPrevious"><</button>
-							<button class="Wallop-buttonNext">></button>
 						</div>
 						<!-- SLIDER ENDS -->
 
