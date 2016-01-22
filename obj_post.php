@@ -29,10 +29,10 @@ if (isset($_POST['text']))
 	}
 	$zprava="Objednavka medu z webu \n\n$pol\n\nTel.: ".$tel. "\n\nmail: ".$mail." \n\nText: ".$txt;
 	file_put_contents('msg.txt', $zprava);
-	// mail('jinkal@volny.cz','Obj. medu',$zprava,$headers);
+    mail('jinkal@volny.cz','Obj. medu',$zprava,$headers);
 //	mail('tomas.gura@gmail.com','Obj. medu',$zprava,$headers);
 }
-var_dump($zprava);
+//var_dump($zprava);
 //die('x');
 header('Location: objednavka.php?sent=1');
 exit;
