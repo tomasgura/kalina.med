@@ -11,7 +11,7 @@ and open the template in the editor.
 		<link rel="stylesheet" href="css/example.css">
 		<link rel="stylesheet" href="css/wallop.css">
 
-        <title>Jindřích Kalina - Pražský med</title>
+        <title>Galerie - Jindřích Kalina - Pražský med</title>
     </head>
     <body>
 		<div class="content">

@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
 		<?php require_once './incl/header.php'; ?>
-        <title>Jindřích Kalina - Objednávka</title>
+        <title>Objednávka - Jindřích Kalina - Pražský med</title>
     </head>
     <body>
 		

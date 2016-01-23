@@ -9,7 +9,7 @@ and open the template in the editor.
 		<?php require_once './incl/header.php'; ?>
 		<?php require_once './incl/fnc.php'; ?>
 
-        <title>Jindřích Kalina - Kontakt</title>
+        <title>Kontakt - Jindřích Kalina - Pražský med</title>
     </head>
     <body>
 		<div class="content">
