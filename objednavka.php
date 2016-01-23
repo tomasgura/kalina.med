@@ -46,7 +46,7 @@ Do objedn8vkz jm0no, příjmení a telefon, vše povinné, poznámku zachovat.
 						<?php echo polozky_objednavky(); ?>
 						<br>
 						<label for="ctrl_19" class="celkem">Cena za med celkem:</label>  <input type="text" name="cenacelkem" id="ctrl_19" class="text celkem" value=""><br>
-						<label for="frm_email" class="frm_label">E-mail:</label> <br><input type="email" name="email" id="frm_emal" size="53" required>
+						<label for="frm_email" class="frm_label">E-mail:</label> <br><input type="email" name="email" id="frm_email" size="53" required>
 						<br>
 						<label for="frm_tel" class="frm_label">Telefon:</label> <br><input type="text" name="tel" id="frm_tel" size="53" required>
 						<br>

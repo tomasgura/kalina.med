@@ -78,6 +78,11 @@ body {
   margin-top: 5px;
   margin-bottom: 0px;
 }
+#frm_tel,
+#frm_email,
+#frm_text {
+  width: 370px;
+}
 fieldset select,
 fieldset input {
   display: block;
